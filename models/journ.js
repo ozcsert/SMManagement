@@ -1,18 +1,18 @@
 const mongoose = require("mongoose")
 
 const journSchema = new mongoose.Schema({
-  title: { 
+  title: {
     type: String,
-    required:false
+    required: false,
   },
   journ: {
     type: String,
-    required: false
+    required: false,
   },
   date: {
     type: String,
-    required : false
-  }
+    required: false,
+  },
 })
 
 //journSchema.set("toJSON", {
@@ -35,11 +35,4 @@ const journSchema = new mongoose.Schema({
 //  }
 //})
 
-
 module.exports = mongoose.model("Journ", journSchema)
-
-
-
-
-
- 
